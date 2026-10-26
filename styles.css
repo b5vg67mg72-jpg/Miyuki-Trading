@@ -47,7 +47,7 @@ body{background:var(--paper)}
 .contact{min-height:570px;background:#faf8f2}.contact-art{background:radial-gradient(circle,#f8f4e9 0 40%,#e9e2d4 73%)}.contact-art img{width:min(67%,315px)}.contact-copy{padding-top:80px;padding-bottom:80px}.contact-copy h2{font-size:clamp(42px,4.3vw,62px)}footer{min-height:110px}
 
 /* Business contact card */
-.contact-copy .contact-company{max-width:760px;margin:38px 0 28px!important;color:var(--ink)!important;font-family:var(--serif);font-size:clamp(48px,5vw,76px)!important;font-weight:500;line-height:1.08;letter-spacing:-.045em}
+.contact-copy .contact-company{max-width:760px;margin:38px 0 28px!important;color:var(--ink)!important;font-family:var(--serif);font-size:clamp(38px,3.6vw,54px)!important;font-weight:500;line-height:1.1;letter-spacing:-.035em}
 .contact-details{width:min(100%,560px);margin-top:38px;border-top:1px solid var(--line)}
 .contact-details>a,.contact-details address{display:grid;grid-template-columns:82px 1fr;gap:18px;padding:16px 0;border-bottom:1px solid var(--line);color:var(--ink);font-size:14px;line-height:1.6;text-decoration:none;font-style:normal}
 .contact-details>a{width:auto;margin:0}
