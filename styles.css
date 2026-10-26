@@ -157,3 +157,21 @@ body{background:var(--paper)}
 .hobby-image-label{position:absolute;z-index:6;left:24px;bottom:22px;padding:10px 13px;border-radius:4px;background:rgba(250,248,242,.86);color:var(--ink);box-shadow:0 9px 24px rgba(51,44,58,.08);backdrop-filter:blur(8px)}
 .hobby-image-label b,.hobby-image-label span{display:block}.hobby-image-label b{font-size:8px;letter-spacing:.17em}.hobby-image-label span{margin-top:5px;color:var(--muted);font-size:7px;letter-spacing:.06em}
 @media(max-width:560px){.hobby-user-illustration{width:100%;height:93%}.hobby-halo{width:78%}.hobby-image-label{left:14px;bottom:14px}}
+
+/* Compact collection cards */
+.collection-feature{min-height:330px;grid-template-columns:1fr 1fr}
+.feature-copy{padding:28px 32px}.collection-number{margin:28px 0 10px}.feature-copy h3{font-size:clamp(34px,3.5vw,50px)}.feature-copy>p:not(.collection-number){margin:16px 0;font-size:11px;line-height:1.6}.hobby-art{min-height:330px}
+.editorial-collections{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.editorial-row{min-height:330px;grid-template-columns:1fr 1fr}.row-copy{padding:28px}.row-copy h3{font-size:clamp(34px,3.5vw,50px);margin:8px 0 14px}.row-copy>p{font-size:11px;line-height:1.6}.material-note{margin-top:24px;padding-top:12px}.row-copy header{padding:18px 20px}.lamb-strip{grid-column:1/-1;min-height:150px}
+@media(max-width:900px){.feature-copy{padding:28px}.editorial-row{min-height:300px}.hobby-art{min-height:300px}}
+@media(max-width:560px){.collection-feature{min-height:0;grid-template-columns:1fr}.hobby-art{min-height:300px}.editorial-collections{grid-template-columns:1fr}.editorial-row{min-height:420px;grid-template-columns:1fr}.lamb-strip{grid-column:auto;min-height:150px}.row-copy{padding:26px}.row-copy h3{font-size:42px}}
+
+/* Equal-size collection grid */
+@media(min-width:901px){
+  .collections{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:16px}
+  .collections-head{grid-column:1/-1;width:100%}
+  .collection-feature{grid-column:auto;width:100%;height:360px;min-height:360px}
+  .editorial-collections{display:contents}
+  .editorial-row,.lamb-strip{grid-column:auto;width:100%;height:360px;min-height:360px}
+  .editorial-row{grid-template-columns:1fr 1fr}
+  .lamb-strip{display:grid;align-items:center}
+}
