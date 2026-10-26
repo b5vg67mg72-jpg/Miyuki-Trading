@@ -165,13 +165,18 @@ body{background:var(--paper)}
 @media(max-width:900px){.feature-copy{padding:28px}.editorial-row{min-height:300px}.hobby-art{min-height:300px}}
 @media(max-width:560px){.collection-feature{min-height:0;grid-template-columns:1fr}.hobby-art{min-height:300px}.editorial-collections{grid-template-columns:1fr}.editorial-row{min-height:420px;grid-template-columns:1fr}.lamb-strip{grid-column:auto;min-height:150px}.row-copy{padding:26px}.row-copy h3{font-size:42px}}
 
+main{display:flex;flex-direction:column}
+.hero{order:1}.collections{order:2}.about{order:3}.capabilities{order:4}.contact{order:5}
+
 /* Equal-size collection grid */
 @media(min-width:901px){
+  main{display:flex;flex-direction:column}
+  .hero{order:1}.collections{order:2}.about{order:3}.capabilities{order:4}.contact{order:5}
   .collections{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:16px}
   .collections-head{grid-column:1/-1;width:100%}
-  .collection-feature{grid-column:auto;width:100%;height:360px;min-height:360px}
+  .collection-feature{grid-column:auto;width:100%;height:320px;min-height:320px}
   .editorial-collections{display:contents}
-  .editorial-row,.lamb-strip{grid-column:auto;width:100%;height:360px;min-height:360px}
+  .editorial-row,.lamb-strip{grid-column:auto;width:100%;height:320px;min-height:320px}
   .editorial-row{grid-template-columns:1fr 1fr}
   .lamb-strip{display:grid;align-items:center}
 }
