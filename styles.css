@@ -47,13 +47,14 @@ body{background:var(--paper)}
 .contact{min-height:570px;background:#faf8f2}.contact-art{background:radial-gradient(circle,#f8f4e9 0 40%,#e9e2d4 73%)}.contact-art img{width:min(67%,315px)}.contact-copy{padding-top:80px;padding-bottom:80px}.contact-copy h2{font-size:clamp(42px,4.3vw,62px)}footer{min-height:110px}
 
 /* Business contact card */
-.contact-copy .contact-role{margin-top:-14px!important;color:var(--ink)!important;font-size:clamp(16px,1.4vw,21px)!important;font-weight:500;letter-spacing:.01em}
+.contact-copy .contact-company{margin:38px 0 8px!important;color:var(--coral)!important;font-size:12px!important;font-weight:700;letter-spacing:.17em;text-transform:uppercase}
+.contact-copy .contact-company+h2{margin-top:0}
 .contact-details{width:min(100%,560px);margin-top:38px;border-top:1px solid var(--line)}
 .contact-details>a,.contact-details address{display:grid;grid-template-columns:82px 1fr;gap:18px;padding:16px 0;border-bottom:1px solid var(--line);color:var(--ink);font-size:14px;line-height:1.6;text-decoration:none;font-style:normal}
 .contact-details>a{width:auto;margin:0}
 .contact-details span{padding-top:2px;color:var(--coral);font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
 .contact-details>a:hover{color:var(--coral)}
-@media(max-width:560px){.contact-copy .contact-role{margin-top:-8px!important}.contact-details{margin-top:30px}.contact-details>a,.contact-details address{grid-template-columns:65px 1fr;gap:12px;font-size:12px}}
+@media(max-width:560px){.contact-details{margin-top:30px}.contact-details>a,.contact-details address{grid-template-columns:65px 1fr;gap:12px;font-size:12px}}
 @media(max-width:900px){.site-header{height:76px}.hero{padding-top:76px;height:auto;grid-template-columns:1fr;background:#faf8f2}.hero-visual{margin:0;border-width:1px 0 0;border-radius:0}.collection-feature{grid-template-columns:1fr}.editorial-row{min-height:0}.capabilities-head{grid-template-columns:1fr}}
 @media(max-width:560px){.site-header{height:72px}.hero{padding-top:72px}.hero-copy{padding-top:80px}.hero h1{font-size:42px}.hero-visual{min-height:420px}.brand-art{width:61%}.collections{padding-inline:12px}.collection-feature,.editorial-row,.lamb-strip{border-radius:6px}.hobby-art{min-height:480px}.art-circle{width:350px;height:350px}.character-family{width:88%;height:78%}}
 
