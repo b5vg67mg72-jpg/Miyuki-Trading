@@ -215,5 +215,5 @@ main{display:flex;flex-direction:column}
   .lamb-strip>div:first-of-type,.lamb-strip>.mini-lamb,.lamb-strip>p{display:none}
   .lamb-strip h3{position:absolute;z-index:5;left:0;right:0;bottom:0;height:82px;padding:13px 16px;background:#f8f5ed;text-align:left;text-shadow:none}
   .collection-feature::after,.editorial-row::after,.lamb-strip::before{position:absolute;z-index:6;right:14px;bottom:14px;font-size:7px;letter-spacing:.16em;color:#7a7c76}
-  .collection-feature::after{content:"01 · NOW TRADING"}.matcha-row::after{content:"02 · COMING SOON"}.knife-row::after{content:"03 · COMING SOON"}.lamb-strip::before{content:"04 · COMING SOON"}
+  .collection-feature::after{content:"01 · NOW TRADING"}.matcha-row::after{content:"02 · COMING SOON"}.knife-row::after{content:"03 · COMING SOON"}.lamb-row::after{content:"04 · COMING SOON"}
 }
