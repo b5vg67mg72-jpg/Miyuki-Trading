@@ -180,3 +180,14 @@ main{display:flex;flex-direction:column}
   .editorial-row{grid-template-columns:1fr 1fr}
   .lamb-strip{display:grid;align-items:center}
 }
+
+@media(min-width:1100px){
+  .collections{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+  .collection-feature,.editorial-row,.lamb-strip{height:250px;min-height:250px}
+  .collection-feature{grid-template-columns:46% 54%}
+  .feature-copy{padding:18px}.status{padding:6px 8px;font-size:6px}.collection-number{margin:20px 0 8px;font-size:7px}.feature-copy h3{font-size:28px}.feature-copy>p:not(.collection-number),.feature-copy .button{display:none}
+  .hobby-art{min-height:250px}.hobby-halo{width:78%}.hobby-user-illustration{width:104%;height:92%}.hobby-image-label{display:none}
+  .editorial-row{grid-template-columns:1fr 1fr}.row-copy{min-height:0;padding:18px}.row-copy header{padding:14px}.row-copy header b{padding:5px 7px;font-size:6px}.row-copy>small{display:none}.row-copy h3{margin:18px 0 0;font-size:27px}.row-copy>p,.material-note{display:none}
+  .type-visual{width:78%;height:72%}.type-visual b,.matcha-type b,.knife-type b{font-size:72px}.type-visual span{left:12px;top:11px;font-size:7px}.type-visual small{bottom:12px;font-size:5px;letter-spacing:.12em;text-align:center}
+  .lamb-strip{position:relative;display:flex;flex-direction:column;justify-content:center;gap:14px;padding:18px;text-align:center}.lamb-strip>div:first-child{position:absolute;left:16px;top:15px;gap:7px;align-items:flex-start}.lamb-strip span,.lamb-strip b{font-size:6px}.lamb-strip b{padding:5px 7px}.lamb-strip h3{font-size:30px}.lamb-strip p{display:none}.mini-lamb{margin-top:22px}
+}
