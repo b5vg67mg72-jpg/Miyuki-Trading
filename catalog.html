@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Browse the Miyuki Trading catalog and prepare an order request." />
+    <title>Catalog | Miyuki Trading</title>
+    <link rel="icon" href="assets/miyuki-mark.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="catalog.css" />
+  </head>
+  <body>
+    <header class="site-header catalog-header">
+      <a class="brand" href="index.html#top" aria-label="Miyuki Trading home"><img src="assets/miyuki-mark-transparent.png" alt="" /><span><strong>MIYUKI</strong><small>TRADING</small></span></a>
+      <nav class="desktop-nav" aria-label="Catalog navigation"><a href="#hobby">Hobby</a><a href="#matcha">Matcha</a><a href="#japanese-knives">Knives</a><a href="#lamb">Lamb</a></nav>
+      <a class="header-action" href="#order-summary">Your order <span id="header-cart-count">0</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><b class="sr-only">Open menu</b></button>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile catalog navigation"><a href="#hobby">Hobby</a><a href="#matcha">Matcha</a><a href="#japanese-knives">Knives</a><a href="#lamb">Lamb</a></nav>
+    </header>
+
+    <main class="catalog-page" id="top">
+      <section class="catalog-hero">
+        <p class="section-label"><span>01</span> Miyuki Trading catalog</p>
+        <div class="catalog-hero-copy">
+          <h1>Products selected<br />with purpose.</h1>
+          <p>This catalog is ready for our product collection. Browse by category, add available items to your order, and send an order request for confirmation.</p>
+        </div>
+        <nav class="category-jump" aria-label="Jump to a catalog category">
+          <a href="#hobby">Hobby Products <span>01</span></a>
+          <a href="#matcha">Matcha <span>02</span></a>
+          <a href="#japanese-knives">Japanese Knives <span>03</span></a>
+          <a href="#lamb">Lamb <span>04</span></a>
+        </nav>
+      </section>
+
+      <div class="catalog-layout">
+        <div class="catalog-sections">
+          <section class="catalog-category" id="hobby" data-category="hobby">
+            <header><div><span>Collection 01</span><h2>Hobby Products</h2></div><img src="assets/hobby-card.png" alt="" /></header>
+            <div class="product-grid" data-product-grid="hobby"></div>
+          </section>
+          <section class="catalog-category" id="matcha" data-category="matcha">
+            <header><div><span>Collection 02</span><h2>Matcha</h2></div><img src="assets/matcha-card.png" alt="" /></header>
+            <div class="product-grid" data-product-grid="matcha"></div>
+          </section>
+          <section class="catalog-category" id="japanese-knives" data-category="japanese-knives">
+            <header><div><span>Collection 03</span><h2>Japanese Knives</h2></div><img src="assets/knife-card.png" alt="" /></header>
+            <div class="product-grid" data-product-grid="japanese-knives"></div>
+          </section>
+          <section class="catalog-category" id="lamb" data-category="lamb">
+            <header><div><span>Collection 04</span><h2>Lamb</h2></div><img src="assets/lamb-card.png" alt="" /></header>
+            <div class="product-grid" data-product-grid="lamb"></div>
+          </section>
+        </div>
+
+        <aside class="order-panel" id="order-summary" aria-labelledby="order-title">
+          <p class="order-kicker">Order request</p>
+          <h2 id="order-title">Your order</h2>
+          <div class="order-items" id="order-items" aria-live="polite"></div>
+          <div class="order-total"><span>Estimated total</span><strong id="order-total">—</strong></div>
+          <button class="order-button" id="order-button" type="button" disabled>Prepare order email</button>
+          <p class="order-note">Availability, shipping, and the final total are confirmed before purchase.</p>
+        </aside>
+      </div>
+    </main>
+
+    <footer><a class="brand footer-brand" href="index.html#top"><img src="assets/miyuki-mark-transparent.png" alt="" /><span><strong>MIYUKI</strong><small>TRADING</small></span></a><p>From Japan, thoughtfully.</p><p>© <span id="year"></span> Miyuki Trading</p></footer>
+
+    <template id="product-card-template">
+      <article class="product-card">
+        <div class="product-image"><img alt="" /></div>
+        <div class="product-details"><p class="product-code"></p><h3></h3><p class="product-description"></p><div class="product-buy"><strong class="product-price"></strong><button type="button">Add to order</button></div></div>
+      </article>
+    </template>
+    <script src="script.js"></script>
+    <script src="catalog.js"></script>
+  </body>
+</html>

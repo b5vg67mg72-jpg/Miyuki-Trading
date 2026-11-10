@@ -121,6 +121,11 @@ body{background:var(--paper)}
   .knife-scene{object-position:56% center}
 }
 
+/* Full-card catalog links preserve the existing collection layout. */
+.catalog-card-hitarea{position:absolute;inset:0;z-index:12;border-radius:inherit;text-decoration:none;cursor:pointer}
+.catalog-card-hitarea:focus-visible{outline:3px solid var(--coral);outline-offset:-5px}
+.collection-feature:has(.catalog-card-hitarea),.editorial-row:has(.catalog-card-hitarea){cursor:pointer}
+
 /* Unified editorial product drawings */
 .collection-drawing{position:absolute;z-index:3;inset:4%;width:92%;height:92%;overflow:visible}
 .collection-drawing *{vector-effect:non-scaling-stroke}
