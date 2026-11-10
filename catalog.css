@@ -8,6 +8,7 @@
 .category-jump a:last-child{border-right:0}.category-jump a:hover{background:#f0ece2}.category-jump span{color:var(--coral);font-size:8px}
 .catalog-layout{padding:52px clamp(18px,5vw,76px) 110px;display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:34px;align-items:start}
 .catalog-sections{min-width:0}.catalog-category{padding:0 0 76px;scroll-margin-top:105px}.catalog-category+ .catalog-category{padding-top:76px;border-top:1px solid var(--line)}
+.catalog-category[hidden]{display:none}.catalog-category.is-active{padding-top:0;border-top:0}
 .catalog-category>header{height:180px;margin-bottom:24px;position:relative;overflow:hidden;display:flex;align-items:flex-end;border-radius:8px;background:#26312d;color:#fff}
 .catalog-category>header::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(25,34,31,.9) 0 45%,rgba(25,34,31,.12) 78%)}
 .catalog-category>header>div{position:relative;z-index:2;padding:28px 32px}.catalog-category>header span{font-size:8px;letter-spacing:.18em;text-transform:uppercase;opacity:.7}

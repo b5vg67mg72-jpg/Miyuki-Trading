@@ -8,6 +8,24 @@ const categoryNames = {
 };
 const cart = new Map();
 
+const showSelectedCategory = () => {
+  const requestedCategory = window.location.hash.slice(1);
+  const activeCategory = categories.includes(requestedCategory) ? requestedCategory : 'hobby';
+
+  document.querySelectorAll('.catalog-category').forEach((section) => {
+    const isActive = section.dataset.category === activeCategory;
+    section.hidden = !isActive;
+    section.classList.toggle('is-active', isActive);
+  });
+
+  document.querySelectorAll('.catalog-header nav a').forEach((link) => {
+    const isCurrent = link.getAttribute('href') === `#${activeCategory}`;
+    link.setAttribute('aria-current', isCurrent ? 'page' : 'false');
+  });
+
+  document.title = `${categoryNames[activeCategory]} Catalog | Miyuki Trading`;
+};
+
 const formatPrice = (product) => {
   if (typeof product.price !== 'number') return 'Price on request';
   return new Intl.NumberFormat('en-US', { style: 'currency', currency: product.currency || 'JPY' }).format(product.price);
@@ -103,3 +121,5 @@ fetch('products.json', { cache: 'no-store' })
   .catch(() => categories.forEach((category) => renderEmptySlots(document.querySelector(`[data-product-grid="${category}"]`))));
 
 renderCart();
+showSelectedCategory();
+window.addEventListener('hashchange', showSelectedCategory);
